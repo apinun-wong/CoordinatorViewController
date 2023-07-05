@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  CoordinatorExample
 //
 //  Created by Apinun on 4/7/2566 BE.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    weak var coordinator: MainCoordinator?
-    
+class FirstViewController: UIViewController, Storyboarded {
+    var coordinator: MainCoordinator!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print("coordinator: \(coordinator == nil)")
@@ -25,4 +25,3 @@ class ViewController: UIViewController {
         print(coordinator == nil)
     }
 }
-
